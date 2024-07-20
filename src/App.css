@@ -79,3 +79,31 @@ body{
   width: 1.3em;
   height: 1.3em;
 }
+.inputFiled{
+  width: 40ch;
+}
+
+@media only screen and (max-width: 544px) {
+ 
+  .inputFiled{
+    width: 30ch;
+  }
+}
+@media only screen and (max-width: 464px) {
+
+  .inputFiled{
+    width: 20ch;
+  }
+}
+@media only screen and (max-width: 380px) {
+
+  .inputFiled{
+    width: 18ch;
+  }
+}
+@media only screen and (max-width: 350px) {
+
+  .inputFiled{
+    width: 25ch;
+  }
+}

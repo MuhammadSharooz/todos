@@ -57,19 +57,21 @@ class App extends Component {
         <h1 className='Heading'>Todos App</h1>
         <div className='todosBox'>
           <div className="addInput">
-          <BasicTextFields
+          <BasicTextFields className='inputfeild'
           value={this.state.value}
           inputValue={(e) => this.setState({value : e.target.value  })}
         />
         <ContainedButtons handleClick={this.add_task} />
           </div>
           <div className='todosList'>
+            <div></div>
             {this.state.todos.map((i,v)=>{
               return (
                 <div key={i.Name} className={`todo ${i.Status? 'completed' : ''}`}  id='listName' >
                   <div className='inputCheck'> 
                          <input type="checkbox" checked={i.Status} onChange={()=>this.handleStatusChange(i.Name)}/>
-                    {i.Name} 
+                   <span className='Name'> {i.Name} </span>
+                    
                      </div>
                   <div className='deleteBtn'>
                  <IconButtons  Delete={this.DeleteSeleted}/>
