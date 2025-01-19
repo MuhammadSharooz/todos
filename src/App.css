@@ -51,7 +51,7 @@ body{
 .todosBox{
   max-width: 500px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: rgb(255, 251, 245);
@@ -64,6 +64,24 @@ body{
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
+.inputCheck {
+	display: inline-flex;
+    width: 90%;
+}
+.Name {
+  overflow: scroll;
+  width: 100%; 
+}
+
+.Name::-webkit-scrollbar {
+  display: none;
+}
+.Name {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 #listName{
   padding: 10px;
   border-radius: 5px;
@@ -87,6 +105,10 @@ body{
  
   .inputFiled{
     width: 30ch;
+  }
+  .inputCheck {
+    display: inline-flex;
+      width: 80%;
   }
 }
 @media only screen and (max-width: 464px) {
